@@ -1,0 +1,448 @@
+.day
+{
+    color:white;
+    background-color: #777;
+    width:100px;
+    float:left; 
+
+}
+.event
+{
+    background-color: rgb(230, 245, 255);
+    
+    height:100%;
+    color:black;
+}
+#notif
+{
+    height: 200px;
+    width:200px;
+    overflow:auto;
+}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+.project-text
+{
+    background-color: rgb(255, 255, 255);
+    width:90%;
+    height:250px;
+    border-radius: 10px;
+    overflow: auto;
+    text-overflow: clip;
+}
+
+.project-text p
+{
+    
+    border-radius: 3px;
+    font-size: 17px;
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.project-text a 
+{
+    color: rgb(136, 136, 247);
+    transition :0.5s;
+}
+.project-text a:hover
+{
+    color: rgb(47, 47, 243);
+    text-decoration: underline;
+}
+.project-text span
+{
+    font-weight: 350;
+    font-size: 15px;
+
+}
+
+.p-box
+{
+    width:640px;
+    height:160px;
+    margin-left: 27%;
+    margin-top: 2%;
+    background-color: rgba(74, 76, 95, 0.938)   ;
+    border-radius: 10px;
+    
+}
+.p-text-area
+{
+    width: 80%;
+    height:80px;
+    margin-top: 2%;
+    resize: none;
+    border-radius: 5px;
+    overflow:auto;
+}
+.p-button
+{
+    
+    font-weight: 700;
+    color:white;
+    width:70px;
+    height:30px;
+    margin-left: 10%;
+    margin-top:2%;
+    border-radius: 5px;
+    border-color:rgb(127, 182, 255);
+    border-width: 0ch;
+    background-color: rgb(127, 214, 255);
+    transition:0.6s;
+}
+.p-button:hover
+{
+    color:white;
+    width:80px;
+    height:40px;
+    background-color: rgb(127, 214, 255);
+}
+.ps-box
+{
+    width:640px;
+    height:260px;
+    margin-left: 27%;
+    margin-top: 2%;
+    background-color: rgba(74, 76, 95, 0.938)   ;
+    border-radius: 10px;
+}
+.ps-img
+{
+    width:70px;
+    float:left;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.ps-box-usr
+{
+    color:white;
+    font-size: 30px;
+    margin-top: 3%;
+    margin-left: 70px;
+}
+
+.inputfile {
+	width: 70px;
+	height: 30px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+    
+    font-weight: 400;
+}
+.inputfile + label {
+    font-size: 12px;
+    
+    font-weight: 700;
+    color: white;
+    background-color: rgb(127, 214, 255);
+   border-width: 0ch;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+   
+}
+
+.inputfile:focus + label,
+
+.inputfile + label:hover {
+    background-color: rgb(127, 214, 255);
+    color: white;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+.button {
+    background-color:rgb(65, 96, 163); /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.post-button {
+    font-size: 12px;
+    background-color: white; 
+    color: black; 
+    width: 75px;
+    border: 2px solid #272c33;
+}
+
+.post-button:hover
+{
+    background-color: rgb(65, 96, 163);;
+    color: white;
+}
+
+.post-area-box
+{
+    width:450px;
+    height: 100px;
+    resize: none;
+    border-color: #272c33;
+    border-width: 2px;
+    overflow:hidden;
+}
+
+.comment-area-box
+{
+    width:350px;
+    height: 35px;
+    resize: none;
+    border-color: #272c33;
+    margin-top: 3%;
+
+}
+
+
+#photo-button
+{
+    background-color: black;
+}
+#post-text
+{
+    overflow: auto;
+    width: 540px;
+    height:200px;
+    resize:none;
+}
+#post-box
+{
+    border: 2px solid #272c33;
+    margin-top : 5%;
+    resize:none;
+}
+.post-image
+{
+    margin-left:auto;
+    margin-right:auto; 
+    width:280px;
+    height:250px;
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+}
+.post-image:hover
+{
+    width: 580px;
+    height: 520px;
+}
+
+#username
+{
+    margin-left: 3%;
+    color:black;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+#username:hover
+{
+    text-decoration: underline;
+    color:rgb(88, 88, 216);
+}
+
+.comments
+{
+    color:black;    
+    border-radius: 5px;
+    width:70%;
+    height:5%;
+    margin-right: auto;
+    background-color: rgb(221, 221, 221);
+    margin-bottom: 1%;
+}
+
+#comment-user
+{
+    font-weight: 500;
+    color:rgb(3, 3, 104);
+    font-size: 17px;
+}
+
+
+#comment-user:hover
+{
+    text-decoration: underline;
+    color:rgb(88, 88, 216);
+}
+
+.prof-header
+{
+    background-color: rgba(57, 59, 73, 0.938) ;
+    margin-top: -1%;
+    height:330px;
+    
+}
+#prof-pic
+{
+    margin-top: 1%;
+    width:13%;
+    border-radius:50%;
+}
+.prof-header p
+{
+    color:white;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+#department
+{
+    color:white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#social-link
+{
+    color:white;
+    font-size:34px;
+    margin-left: 1%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    
+}
+
+#social-link:hover
+{
+    color:rgb(170, 214, 255);
+    font-size:50px;
+}
+.info{
+    margin-left: 1%;
+}
+.info-head
+{
+    margin-top: 3%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgba(57, 59, 73, 0.938) ;
+    
+    
+}
+.info-head h2
+{
+    margin-left: 2%;
+    color:white;
+}
+.info-text
+{
+    background-color: rgb(255, 255, 255);
+    width:50%;
+    height:250px;
+    border-radius: 10px;
+    overflow: auto;
+    text-overflow: clip;
+}
+.info-text p {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+#viewproject
+{
+    margin-left: 2%;
+    margin-top: 3%;
+    font-size: 20px;
+    color: rgb(144, 173, 255);
+    font-weight: 500;
+    transition: 0.7s;
+}
+#viewproject:hover
+{
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.p-text-comment
+{
+    width: 80%;
+    height:40px;
+    margin-top: 2%;
+    resize: none;
+    border-radius: 5px;
+    overflow:auto;
+}
