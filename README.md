@@ -1,6 +1,6 @@
 # CUFE_Website
 
- a website for faculty of engineering – Cairo university. Social network for the student to communicate with each other. It’s written in Laravel. 
+ a website for faculty of engineering – Cairo university. Social network for students to communicate with each other. It’s written in Laravel. 
 
 
 
